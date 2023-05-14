@@ -1,0 +1,107 @@
+/* Estilos padrão do nav */
+@keyframes animacao  {
+  from  
+  
+}
+
+body{
+  padding:0;
+  margin: 0;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: rgb(16, 139, 139);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-left: 20px;
+}
+
+nav li {
+  margin-right: 30px;
+  border-radius: 2px;
+  background-color: rgb(16, 139, 139);
+  text-align: center;
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav li::after {
+  content: "";
+  width: 0%;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+nav li:hover::after {
+  width: 100%;
+}
+
+li {
+  background-color: white;
+}
+.lista{
+  border: 10% ;
+  padding-right: 10px;
+}
+.b2{
+  animation-name: animacao;
+  
+}
+h4{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+h1{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+table{
+  margin-left: 20px;
+}
+textarea{
+  resize: none;
+}
+/* Estilos para telas menores que 768px */
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 0;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
+
+  nav li::after {
+    content: none;
+  }
+  *{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

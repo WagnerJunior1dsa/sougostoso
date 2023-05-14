@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Untitled-1.css">
+    <title>dados</title>
+    <script>
+        function cadastrar(){
+            var nome = form1.nome.value;
+            var email = form1.email.value;
+            if(nome == ""){
+                alert("Preencha seu nome completo");
+                form1.nome.focus;
+                return false;
+            }
+            if(email == ""){
+                alert("Preencha seu email");
+                form1.email.focus;
+                return false;
+            }
+            return true
+        }
+    </script>
+</head>
+<body background="sfeKGiA-blue-gradient-wallpaper.jpg" topmargin="20" leftmargin="10">
+    <font face="Arial" color="#183618">    
+       
+            <nav>
+                <ul>
+                    <li>ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</li>
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="dominios.html">Dominios</a></li>
+                    <li><a href="custos.html">Custos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+         
+                <center>
+                    <h1>Preencha os dados pedidos para entrar em contato</h1>
+    <form name="form1" action="atividade4a.html" method="post">
+        <div style="margin: 0 auto; width: 400px; background-color: white; padding: 20px;">
+            <label for="nome">Digite seu nome completo:</label>
+            <br>
+            <input type="text" placeholder="digite seu nome"  name="nome" style="width: 100%; margin-bottom: 10px;">
+            <br>
+            <label for="email">Email:</label>
+            <br>
+            <input type="text" placeholder="digite seu email" name="email" style="width: 100%; margin-bottom: 10px;">
+            <br>
+            <label for="comment">Comentários:</label>
+            <br>
+            <textarea name="comment" placeholder="digite seu comentario" style="width: 100%; margin-bottom: 10px;" ></textarea> <br>
+            <input type="submit" onclick="return cadastrar()" value="Enviar" style="background-color: grey; color: white; border: none; padding: 10px 20px; margin-right: 10px;">
+            <input type="reset" name="limpa" value="Limpar" style="background-color: grey; color: white; border: none; padding: 10px 20px;">
+        </div>
+    </form>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr> 
+    <p>
+        <center>Wagner Novaes 2023 &copyTodos os direitos reservados</center>
+    </p>
+</body>
+</html>
