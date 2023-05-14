@@ -100,8 +100,16 @@ textarea{
   nav li::after {
     content: none;
   }
-  *{
+  h1{
     margin-left: 20px;
     margin-right: 20px;
   }
+  h4{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  table{
+    margin-left: 20px;
+  }
 }
+
